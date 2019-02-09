@@ -20,9 +20,9 @@ while(vc.isOpened()):
     if len(faces) == 0:
         continue
     
-    faces = sorted(faces, key=lambda f: f[2]*f[3])#to get the largest face in the frame
+    #faces = sorted(faces, key=lambda f: f[2]*f[3])#to get the largest face in the frame
 
-    for face in faces[-1:]:
+    for face in faces:
         x,y,w,h = face
         cv2.rectangle(frame, (x,y), (x+w, y+h), (0,0,255), 2)
         #crop required face: area of interest
