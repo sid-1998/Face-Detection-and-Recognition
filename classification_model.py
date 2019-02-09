@@ -35,5 +35,3 @@ knn = KNeighborsClassifier()
 knn.fit(X_train, Y_train)
 print(knn.score(X_test, Y_test))
 
-
-
