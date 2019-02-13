@@ -1,5 +1,5 @@
 # Face-Detection-and-Recognition
-Face detction and recognition using OpenCV, Haarcascade and KNN
+Face detection and recognition using OpenCV, Haarcascade and KNN
 
 ## Usage
 ### To detect faces from images
