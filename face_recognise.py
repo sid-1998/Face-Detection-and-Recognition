@@ -4,8 +4,8 @@ from classification_model import knn
 
 
 mapping = {
-    "0": "Siddharth",
-    "1": "Thor"
+    0: "Siddharth",
+    1: "Thor"
 }
 vc = cv2.VideoCapture(0)
 
@@ -32,7 +32,7 @@ while True:
         print(face_section.shape)
         #Predicted Label (out)
         out = knn.predict(face_section)
-
+        print(out)
         #Display on the screen the name and rectangle around it
         pred_name = mapping[int(out)]
         cv2.putText(frame,pred_name,(x,y-10),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),2,cv2.LINE_AA)
