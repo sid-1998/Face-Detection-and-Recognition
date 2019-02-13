@@ -14,9 +14,9 @@ for img in images:
     for face in faces:
         x,y,w,h = face
         cv2.rectangle(im, (x,y), (x+w, y+h), (0,0,255), 2)
-        offset = 10
-        face_section = im[y-offset:y+h+offset, x-offset:x+w+offset]
+        # offset = 10
+        # face_section = im[y-offset:y+h+offset, x-offset:x+w+offset]
 
-        cv2.imwrite('./output/' + img, face_section)
+        cv2.imwrite('./output/' + img, im)
         print("Done")
     
