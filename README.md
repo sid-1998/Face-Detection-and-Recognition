@@ -13,10 +13,10 @@ python face_detection_images.py
 The output images will be saved in output folder
 
 ### Test Image
-![sample](./test_images/test.jpeg)
+![sample](test_images/test.jpeg)
 
 ### Output image
-![output](./output/test.jpeg)
+![output](output/test.jpeg)
 
 ### To capture data from webcam
 
