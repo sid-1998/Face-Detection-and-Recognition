@@ -44,7 +44,7 @@ while True:
     if key==ord('q'):
         break
 
-cap.release()
+vc.release()
 cv2.destroyAllWindows()
 
 
